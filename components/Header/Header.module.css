@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+.logoContainer {
+  position: absolute;
+  left: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.headerNavigation {
+  display: flex;
+  gap: 32px;
+}
+
+.headerNavigation ul {
+  display: flex;
+  gap: 32px;
+}
+
+.navButton {
+  display: block;
+  padding: 24px 0px;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: color 300ms ease-in-out;
+}
+
+.navButtonActive {
+  color: #d84343;
+}
+
+.navButton:hover,
+.navButton:focus {
+  color: #d84343;
+}

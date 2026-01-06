@@ -1,0 +1,46 @@
+.heroSection {
+  background-image: url("/images/hero-picture.png");
+  background-image: image-set(
+    url("/images/hero-picture.png") 1x,
+    url("/images/hero-picture@2x.png") 2x
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 696px;
+}
+
+.heroContainer {
+  padding: 260px 0px 260px 64px;
+  color: #f7f7f7;
+}
+
+.heroTitle {
+  font-size: 48px;
+  line-height: 0.66667;
+  margin-bottom: 16px;
+}
+
+.heroDescription {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  margin-bottom: 40px;
+}
+
+.navButton {
+  display: block;
+  width: 173px;
+  border-radius: 200px;
+  padding: 16px 48.5px;
+  background-color: #e44848;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  transition: background-color 300ms ease-in-out;
+}
+
+.navButton:hover,
+.navButton:focus {
+  background-color: #d84343;
+}
