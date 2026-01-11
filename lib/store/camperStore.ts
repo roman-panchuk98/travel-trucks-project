@@ -29,10 +29,11 @@ export const useCamperStore = create<CampersState>()(
           total: 0,
         });
       },
-      resetCampers: () =>
+      resetFilters: () =>
         set({
-          campers: [],
+          filters: {},
           page: 1,
+          total: 0,
         }),
 
       nextPage: () =>
@@ -49,16 +50,6 @@ export const useCamperStore = create<CampersState>()(
         })),
 
       isFavorite: (id) => get().favorites.some((camper) => camper.id === id),
-
-      setLoading: (value) =>
-        set({
-          isLoading: value,
-        }),
-
-      setError: (message) =>
-        set({
-          error: message,
-        }),
     }),
     {
       name: "campers-store",

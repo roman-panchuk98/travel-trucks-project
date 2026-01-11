@@ -17,12 +17,17 @@ const CatalogClient = () => {
     filters,
     setCampers,
     appendCampers,
+    resetFilters,
     nextPage,
     total,
     isFavorite,
     addToFavorites,
     removeFromFavorites,
   } = useCamperStore();
+
+  useEffect(() => {
+    resetFilters();
+  }, [resetFilters]);
 
   const { data, isFetching, isPlaceholderData } = useQuery({
     queryKey: ["campers", page, filters],

@@ -71,16 +71,12 @@ export interface CampersState {
   limit: number;
   filters: CampersQueryParams;
   favorites: Camper[];
-  isLoading: boolean;
-  error: string | null;
   setCampers: (campers: Camper[], total: number) => void;
   appendCampers: (campers: Camper[]) => void;
   setFilters: (filters: CampersQueryParams) => void;
-  resetCampers: () => void;
+  resetFilters: () => void;
   nextPage: () => void;
   addToFavorites: (camper: Camper) => void;
   removeFromFavorites: (id: string) => void;
   isFavorite: (id: string) => boolean;
-  setLoading: (value: boolean) => void;
-  setError: (message: string | null) => void;
 }
