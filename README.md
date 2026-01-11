@@ -71,7 +71,7 @@ GET /campers/:id — fetch detailed camper information
 
 Clone the repository:
 
-git clone https://github.com/roman-panchuk98/travel-trucks-project
+git clone git@github.com:roman-panchuk98/travel-trucks-project.git
 
 
 Navigate to the project folder:
