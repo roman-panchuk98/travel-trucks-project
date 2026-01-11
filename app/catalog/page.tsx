@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     url: "https://travel-trucks-project-rho.vercel.app/catalog",
     images: [
       {
-        url: "/images/homePage/Picture-1x.png",
+        url: "./images/hero-picture.png",
         width: 1200,
         height: 630,
         alt: "Travel Trucks camper catalog",
