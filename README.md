@@ -6,9 +6,7 @@ The project is implemented according to the technical specification using Next.j
 
 🔗 Demo
 
-Live version: https://travel-trucks-project-rho.vercel.app
-
-Repository: (insert GitHub link here)
+Live version: [https://travel-trucks-project-rho.vercel.app](https://travel-trucks-project-rho.vercel.app/)
 
 🧩 Main Features
 
@@ -73,7 +71,7 @@ GET /campers/:id — fetch detailed camper information
 
 Clone the repository:
 
-git clone https://github.com/your-username/travel-trucks.git
+git clone [https://github.com/your-username/travel-trucks.git](https://github.com/roman-panchuk98/travel-trucks-project)
 
 
 Navigate to the project folder:
