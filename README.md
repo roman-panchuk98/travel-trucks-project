@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚐 Travel Trucks
 
-## Getting Started
+Travel Trucks is a web application for searching and renting campers. Users can browse the vehicle catalog, filter campers by location, type, and amenities, view detailed information for each camper, read reviews, and make bookings.
 
-First, run the development server:
+The project is implemented according to the technical specification using Next.js, TypeScript, Zustand, and React Query.
 
-```bash
+🔗 Demo
+
+Live version: https://travel-trucks-project-rho.vercel.app
+
+Repository: (insert GitHub link here)
+
+🧩 Main Features
+
+📋 Camper Catalog Viewing
+
+🔍 Camper Filtering (performed on the backend):
+
+by location
+
+by vehicle type
+
+by available amenities (AC, kitchen, bathroom, etc.)
+
+➕ Pagination with a "Load More" button
+
+❤️ Add campers to favorites (saved after page reload)
+
+📄 Detailed Camper Page
+
+🖼 Photo Gallery
+
+⭐ User Reviews with ratings
+
+📝 Booking Form with a notification for successful submission
+
+⚡ Loader during asynchronous requests
+
+🛠 Technologies
+
+Next.js (App Router)
+
+TypeScript
+
+Zustand — global state (campers, filters, favorites)
+
+@tanstack/react-query — API handling, caching, and pagination
+
+Axios — HTTP requests
+
+CSS Modules — styling
+
+Vercel — deployment
+
+📂 Routes
+
+Route	Description
+/	Home page with banner
+/catalog	Camper catalog with filters
+/catalog/:id	Individual camper page
+
+📡 API
+
+Main endpoints:
+
+GET /campers — fetch a list of campers (with pagination and filters)
+
+GET /campers/:id — fetch detailed camper information
+
+❗ All filtering is performed on the backend, not on the frontend.
+
+⚙️ Installation & Running Locally
+
+Clone the repository:
+
+git clone https://github.com/your-username/travel-trucks.git
+
+
+Navigate to the project folder:
+
+cd travel-trucks
+
+
+Install dependencies:
+
+npm install
+
+
+Run the project locally:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open in the browser:
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧠 Architecture & Approach
 
-## Learn More
+Component-based approach
 
-To learn more about Next.js, take a look at the following resources:
+Global state via Zustand
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Data fetching with React Query
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Pagination and filtering synchronized with the backend
 
-## Deploy on Vercel
+Follows DRY principles and clean code practices
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👤 Author
+
+Roman Panchuk
+Frontend Developer
+🇵🇱 Poland
