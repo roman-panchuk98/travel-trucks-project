@@ -3,6 +3,7 @@ import Image from "next/image";
 import css from "./CatalogList.module.css";
 import Link from "next/link";
 import CamperEquipments from "./CamperEquipments/CamperEquipments";
+import toast from "react-hot-toast";
 
 interface CamperListProps {
   campers: Camper[];
@@ -24,8 +25,10 @@ const CatalogList = ({
   const handleFavoriteClick = (camper: Camper) => {
     if (isFavorite(camper.id)) {
       removeFromFavorites(camper.id);
+      toast.success("Camper is remove in favorite");
     } else {
       addToFavorites(camper);
+      toast.success("Camper is added to favorite");
     }
   };
 

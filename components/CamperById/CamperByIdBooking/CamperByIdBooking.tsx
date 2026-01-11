@@ -3,7 +3,7 @@ import * as Yup from "yup";
 import css from "./CamperByIdBooking.module.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 interface initialValuesProps {
   name: string;
@@ -46,7 +46,6 @@ const CamperByIdBooking = () => {
 
   return (
     <div className={css.camperByIdBookingBox}>
-      <Toaster />
       <div className={css.camperByIdBookingInfo}>
         <h3 className={css.camperByIdBookingTitle}>Book your campervan now</h3>
         <p className={css.camperByIdBookingDescription}>
