@@ -19,6 +19,9 @@ const CatalogClient = () => {
     appendCampers,
     nextPage,
     total,
+    isFavorite,
+    addToFavorites,
+    removeFromFavorites,
   } = useCamperStore();
 
   const { data, isFetching, isPlaceholderData } = useQuery({
@@ -52,7 +55,12 @@ const CatalogClient = () => {
     <section className={css.catalogContainer}>
       <SidebarCatalog />
       <div className={css.catalogListBox}>
-        <CatalogList campers={campers} />
+        <CatalogList
+          campers={campers}
+          addToFavorites={addToFavorites}
+          removeFromFavorites={removeFromFavorites}
+          isFavorite={isFavorite}
+        />
         {loadMore && (
           <button
             type="button"

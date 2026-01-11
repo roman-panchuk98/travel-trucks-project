@@ -80,3 +80,17 @@
 .showMoreBtn:focus {
   background-color: #d84343;
 }
+
+.favoriteBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.addToFavorite {
+  background-color: inherit;
+}
+
+.favoriteActive svg {
+  fill: #e44848;
+}
