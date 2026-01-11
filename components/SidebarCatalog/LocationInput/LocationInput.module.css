@@ -1,0 +1,40 @@
+.locationInputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.labelLocationInput {
+  line-height: 1.5;
+  color: #6c717b;
+}
+
+.locationInput {
+  width: 360px;
+  background-color: #f7f7f7;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #101828;
+  padding: 16px 48px;
+}
+
+.inputIconBox {
+  position: relative;
+}
+
+.iconLocationInput {
+  position: absolute;
+  left: 20px;
+  top: 16px;
+  fill: #6c717b;
+  transition: fill 300ms ease-in-out;
+}
+
+.inputIconBox:hover .iconLocationInput,
+.inputIconBox:focus-within .iconLocationInput {
+  fill: #101828;
+}

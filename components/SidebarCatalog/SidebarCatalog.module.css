@@ -1,0 +1,30 @@
+.formFilters {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.formText {
+  font-weight: 500;
+  line-height: 1.5;
+  color: #475467;
+}
+
+.formBtnSubmit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #fff;
+  padding: 16px 56.5px;
+  border-radius: 200px;
+  background-color: #e44848;
+  margin-top: 40px;
+  transition: background-color 300ms ease-in-out;
+}
+
+.formBtnSubmit:hover,
+.formBtnSubmit:focus {
+  background-color: #d84343;
+}

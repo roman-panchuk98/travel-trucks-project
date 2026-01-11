@@ -1,14 +1,21 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
   background-color: #f7f7f7;
 }
 
+.headerContainer {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logoContainer {
+  margin-left: 64px;
   position: absolute;
-  left: 64px;
+  left: 0px;
   display: flex;
   align-items: center;
 }

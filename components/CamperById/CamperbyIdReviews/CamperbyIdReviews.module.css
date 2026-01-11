@@ -1,0 +1,42 @@
+.camperbyIdReviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.camperbyIdReviewsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 631px;
+}
+
+.camperbyIdReviewsItemBox {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.camperbyIdReviewsItemAvatar {
+  border-radius: 60px;
+  background-color: #f2f4f7;
+  padding: 15px 21px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #e44848;
+}
+
+.camperbyIdReviewsItemName {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.camperbyIdReviewsItemComment {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #475467;
+}

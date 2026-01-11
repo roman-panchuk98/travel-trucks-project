@@ -1,0 +1,37 @@
+.camperByIdFeaturesBox {
+  padding: 44px 52px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  width: 631px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.camperByIdFeaturesDetailsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.camperByIdFeaturesDetailsTitle {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.camperByIdFeaturesDetailsLine {
+  border: 1px solid #dadde1;
+}
+
+.camperByIdFeaturesDetailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.camperByIdFeaturesDetailsItem {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  line-height: 1.5;
+}

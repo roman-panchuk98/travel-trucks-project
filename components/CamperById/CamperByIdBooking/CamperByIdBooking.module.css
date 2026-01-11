@@ -1,0 +1,61 @@
+.camperByIdBookingBox {
+  padding: 44px 56px;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  width: 641px;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.camperByIdBookingInfo {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.camperByIdBookingTitle {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.camperByIdBookingDescription {
+  font-weight: 400;
+  color: #6c717b;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formInput {
+  padding: 18px;
+  border-radius: 12px;
+  width: 527px;
+  border: none;
+  outline: none;
+  background-color: #f7f7f7;
+}
+
+.formTextArea {
+  resize: none;
+  height: 118px;
+}
+
+.formSubmitButton {
+  padding: 16px 63px;
+  margin: 0 auto;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #fff;
+  border-radius: 200px;
+  background-color: #e44848;
+  transition: background-color 300ms ease-in-out;
+}
+
+.formSubmitButton:hover,
+.formSubmitButton:focus {
+  background-color: #d84343;
+}

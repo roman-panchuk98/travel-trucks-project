@@ -1,0 +1,82 @@
+.catalogList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 888px;
+}
+
+.catalogItemInfoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.catalogItem {
+  display: flex;
+  gap: 24px;
+  border: 1px solid #dadde1;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.catalogImg {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.namePriceBox {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.ratingLocationBox {
+  display: flex;
+  gap: 16px;
+  line-height: 1.5;
+}
+
+.ratingItemBox {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.locationItemBox {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.catalogItemDescription {
+  width: 525px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  color: #475467;
+}
+
+.noCampersTitle {
+  margin: 0 auto;
+}
+
+.showMoreBtn {
+  align-self: flex-start;
+  padding: 16px 40px;
+  border-radius: 200px;
+  background-color: #e44848;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #fff;
+  transition: background-color 300ms ease-in-out;
+}
+
+.showMoreBtn:hover,
+.showMoreBtn:focus {
+  background-color: #d84343;
+}

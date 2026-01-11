@@ -40,6 +40,11 @@ ol {
   list-style-type: none;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
