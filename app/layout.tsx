@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Travel Trucks",
     description: "Travel Trucks, choose the camper of your dreams",
-    url: "", // Не забути додати посилання на живу сторінку!
+    url: "https://travel-trucks-project-rho.vercel.app",
     images: [
       {
         url: "./images/hero-picture.png",
