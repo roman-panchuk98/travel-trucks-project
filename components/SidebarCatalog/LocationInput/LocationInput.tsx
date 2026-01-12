@@ -22,7 +22,9 @@ const LocationInput = ({ filters, setFilters }: LocationInputProps) => {
           placeholder="City"
           className={css.locationInput}
           value={filters.location || ""}
-          onChange={(e) => setFilters({ ...filters, location: e.target.value })}
+          onChange={(e) =>
+            setFilters({ ...filters, location: e.target.value.trim() })
+          }
         />
         <svg width={20} height={20} className={css.iconLocationInput}>
           <use href="/sprite/sprite.svg#icon-map" />

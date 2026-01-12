@@ -4,7 +4,7 @@ import { CamperForm, CampersQueryParams } from "@/types/camper";
 import css from "./VehicleTypeFilters.module.css";
 import clsx from "clsx";
 
-interface VehicleTypeFiltersProps {
+export interface VehicleTypeFiltersProps {
   filters: CampersQueryParams;
   setFilters: (filters: CampersQueryParams) => void;
 }

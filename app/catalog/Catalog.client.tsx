@@ -4,7 +4,7 @@ import CatalogList from "@/components/CatalogList/CatalogList";
 import { getAllCampers } from "@/lib/api";
 import { useCamperStore } from "@/lib/store/camperStore";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import css from "./CatalogClient.module.css";
 import { ScaleLoader } from "react-spinners";
 import SidebarCatalog from "@/components/SidebarCatalog/SidebarCatalog";
@@ -12,18 +12,18 @@ import SidebarCatalog from "@/components/SidebarCatalog/SidebarCatalog";
 const CatalogClient = () => {
   const {
     campers,
-    page,
     limit,
     filters,
     setCampers,
     appendCampers,
     resetFilters,
-    nextPage,
     total,
     isFavorite,
     addToFavorites,
     removeFromFavorites,
   } = useCamperStore();
+
+  const [page, setPage] = useState<number>(1);
 
   useEffect(() => {
     resetFilters();
@@ -50,6 +50,12 @@ const CatalogClient = () => {
     }
   }, [data, page, setCampers, appendCampers, isPlaceholderData]);
 
+  const handleReset = () => {
+    if (!filters || Object.keys(filters).length === 0) return;
+    resetFilters();
+    setPage(1);
+  };
+
   if (!campers.length && isFetching) {
     return <ScaleLoader className={css.loadingFetching} color="black" />;
   }
@@ -58,7 +64,7 @@ const CatalogClient = () => {
 
   return (
     <section className={css.catalogContainer}>
-      <SidebarCatalog />
+      <SidebarCatalog onReset={handleReset} />
       <div className={css.catalogListBox}>
         <CatalogList
           campers={campers}
@@ -70,7 +76,7 @@ const CatalogClient = () => {
           <button
             type="button"
             className={css.loadMoreBtn}
-            onClick={nextPage}
+            onClick={() => setPage((p) => p + 1)}
             disabled={isFetching}
           >
             {isFetching ? "Loading..." : "Load More"}

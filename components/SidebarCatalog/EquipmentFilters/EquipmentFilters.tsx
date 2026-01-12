@@ -16,7 +16,7 @@ const EquipmentFilters = ({ filters, setFilters }: EquipmentFiltersProps) => {
     icon: string;
   }[] = [
     { key: "AC", label: "AC", icon: "icon-AC" },
-    { key: "radio", label: "Radio", icon: "icon-automatic" },
+    { key: "radio", label: "Radio", icon: "icon-radio" },
     { key: "kitchen", label: "Kitchen", icon: "icon-kitchen" },
     { key: "TV", label: "TV", icon: "icon-tv" },
     { key: "refrigerator", label: "Refrigerator", icon: "icon-refrigerator" },

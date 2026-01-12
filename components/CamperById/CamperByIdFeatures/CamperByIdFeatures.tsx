@@ -4,6 +4,11 @@ import CamperEquipments, {
 import css from "./CamperByIdFeatures.module.css";
 
 const CamperByIdFeatures = ({ camper }: CamperItemsProps) => {
+  const splitCamelCaseCapitalized = (str: string) => {
+    if (!str) return "";
+    const result = str.replace(/([a-z])([A-Z])/g, "$1 $2");
+    return result.charAt(0).toUpperCase() + result.slice(1);
+  };
   return (
     <div className={css.camperByIdFeaturesBox}>
       <div className={css.camperByIdFeaturesEquipmentsBox}>
@@ -15,7 +20,7 @@ const CamperByIdFeatures = ({ camper }: CamperItemsProps) => {
         <ul className={css.camperByIdFeaturesDetailsList}>
           <li className={css.camperByIdFeaturesDetailsItem}>
             <p>Form</p>
-            <p>{camper.form}</p>
+            <p>{splitCamelCaseCapitalized(camper.form)}</p>
           </li>
           <li className={css.camperByIdFeaturesDetailsItem}>
             <p>Length</p>

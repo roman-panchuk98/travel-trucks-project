@@ -2,7 +2,7 @@ export type CamperForm = "alcove" | "fullyIntegrated" | "panelTruck";
 
 export type Transmission = "automatic" | "manual";
 
-export type Engine = "diesel" | "petrol";
+export type Engine = "diesel" | "petrol" | "hybrid";
 
 export interface Camper {
   id: string;
@@ -52,6 +52,8 @@ export interface CampersQueryParams {
   page?: number;
   limit?: number;
   location?: string;
+  transmission?: Transmission;
+  engine?: Engine;
   form?: CamperForm;
   AC?: boolean;
   bathroom?: boolean;
@@ -67,7 +69,6 @@ export interface CampersQueryParams {
 export interface CampersState {
   campers: Camper[];
   total: number;
-  page: number;
   limit: number;
   filters: CampersQueryParams;
   favorites: Camper[];
@@ -75,7 +76,6 @@ export interface CampersState {
   appendCampers: (campers: Camper[]) => void;
   setFilters: (filters: CampersQueryParams) => void;
   resetFilters: () => void;
-  nextPage: () => void;
   addToFavorites: (camper: Camper) => void;
   removeFromFavorites: (id: string) => void;
   isFavorite: (id: string) => boolean;
