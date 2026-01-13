@@ -12,6 +12,32 @@
   justify-content: center;
 }
 
+.favoriteListBtn {
+  position: absolute;
+  right: 0px;
+  margin-right: 64px;
+  background-color: inherit;
+  border: 1px solid #dadde1;
+  border-radius: 200px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background-color 300ms ease-in-out,
+    fill 300ms ease-in-out;
+}
+
+.favoriteListBtn:hover,
+.favoriteListBtn:focus {
+  background-color: #d84343;
+}
+
+.favoriteListBtn:hover .favoriteListIcon,
+.favoriteListBtn:focus .favoriteListIcon {
+  fill: #dadde1;
+}
+
 .logoContainer {
   margin-left: 64px;
   position: absolute;

@@ -29,7 +29,3 @@
 .loadMoreBtn:focus {
   border-color: #d84343;
 }
-
-.loadingFetching {
-  margin: 0 auto;
-}

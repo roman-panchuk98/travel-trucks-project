@@ -1,0 +1,48 @@
+.favoriteTitle {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #d84343;
+}
+
+.favoriteList {
+  list-style-type: decimal;
+  padding: 0px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.favoriteItem {
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1.5;
+  transition: color 300ms ease-in-out;
+}
+
+.emptyListFavorite {
+  font-size: 20px;
+}
+
+.favoriteItem:hover,
+.favoriteItem:focus {
+  color: #d84343;
+}
+
+.favoriteItemBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteFavoriteBtn {
+  background-color: inherit;
+}
+
+.favoriteListIcon {
+  transition: fill 300ms ease-in-out;
+}
+
+.deleteFavoriteBtn:hover .favoriteListIcon,
+.deleteFavoriteBtn:focus .favoriteListIcon {
+  fill: #d84343;
+}
